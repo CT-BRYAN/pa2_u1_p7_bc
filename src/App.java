@@ -1,5 +1,7 @@
 import com.edu.ec.negocio.Pedido;
 import com.edu.ec.negocio.PedidoService;
+import com.edu.ec.tarea.Reserva;
+import com.edu.ec.tarea.ReservaService;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -12,6 +14,16 @@ public class App {
         pedidoService = null;// El objeto sea elegible por el GC
         pedido = null;// El objeto sea elegible por el garbage collector
         //nueva rama
+
+        System.out.println("\nEjemplo Tarea");
+
+        Reserva reserva = new Reserva("Bryan","Suite",3,"099345687");
+        ReservaService reservaService = new ReservaService();
+        reservaService.reservar(reserva);
+
+        
+
+
 
     }
 }
