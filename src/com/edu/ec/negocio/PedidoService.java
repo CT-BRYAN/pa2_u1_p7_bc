@@ -16,5 +16,9 @@ public class PedidoService {
                 + "ha sido realizado con exito.";
         mailService.enviar(pedido.getCorreo(), asunto, cuerpo);
         mailService = null;
+        //nueva rama
+        
+        
+
     }
 }
